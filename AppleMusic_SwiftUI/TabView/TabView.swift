@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct AppTabView: View {
+    
+    init() {
+            UITabBar.appearance()
+            .backgroundColor =  UIColor(named: "GrayColor")
+        }
+
     var body: some View {
         ZStack(alignment:
                 Alignment(horizontal: .center,
