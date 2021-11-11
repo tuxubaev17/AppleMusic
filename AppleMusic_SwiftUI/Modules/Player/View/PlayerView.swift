@@ -37,7 +37,6 @@ struct PlayerView: View {
                         .padding(.trailing, 5)
                 })
             }
-            .offset(y: 2)
             .padding()
 
         }
