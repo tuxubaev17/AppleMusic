@@ -9,7 +9,41 @@ import SwiftUI
 
 struct PlayerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Image("WOODJU")
+                    .resizable()
+                    .frame(width: 55, height: 55)
+                    .cornerRadius(5)
+                    .shadow(color: .gray, radius: 10, x: 0.0, y: 5.0)
+                    .padding(.leading, 5)
+                
+                Text("WOODJU - Vacuum")
+                    .foregroundColor(.black.opacity(0.7))
+                    .padding(.leading, 10)
+                
+                Spacer()
+                
+                Button(action: {}, label: {
+                    Image(systemName: "play.fill")
+                        .font(.title2)
+                        .foregroundColor(.black)
+                        .padding(.trailing, 10)
+                })
+                Button(action: {}, label: {
+                    Image(systemName: "forward.fill")
+                        .font(.title2)
+                        .foregroundColor(.gray)
+                        .padding(.trailing, 5)
+                })
+            }
+            .offset(y: 2)
+            .padding()
+
+        }
+        .frame(height: 75)
+        .background(.gray.opacity(0.1))
+        .offset(y: -50)
     }
 }
 

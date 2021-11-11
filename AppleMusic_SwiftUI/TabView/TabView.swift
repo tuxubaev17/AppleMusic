@@ -31,6 +31,8 @@ struct AppTabView: View {
                     }
             }
             .accentColor(.red)
+            
+            PlayerView()
         })
     }
 }
