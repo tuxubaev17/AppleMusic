@@ -88,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				5574DD05273CB6F600841E4A /* View */,
-				5574DD04273CB6CB00841E4A /* Model */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -100,13 +99,6 @@
 				5574DD06273CB6FD00841E4A /* Model */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		5574DD04273CB6CB00841E4A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		5574DD05273CB6F600841E4A /* View */ = {
