@@ -7,14 +7,36 @@
 
 import SwiftUI
 
-struct TabView: View {
+struct AppTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment:
+                Alignment(horizontal: .center,
+                          vertical: .bottom),
+               content: {
+            TabView {
+                LibraryView()
+                    .tabItem {
+                        Image(systemName: "music.note.house.fill")
+                        Text("Медиатека")
+                    }
+                RadioView()
+                    .tabItem {
+                        Image(systemName: "dot.radiowaves.left.and.right")
+                        Text("Радио")
+                    }
+                Text("Поиск")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Поиск")
+                    }
+            }
+            .accentColor(.red)
+        })
     }
 }
 
-struct TabView_Previews: PreviewProvider {
+struct AppTabView_Previews: PreviewProvider {
     static var previews: some View {
-        TabView()
+        AppTabView()
     }
 }
