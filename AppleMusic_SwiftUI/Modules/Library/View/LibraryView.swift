@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct LibraryView: View {
+    
+    @State private var isEmptyLibrary = true
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack {
+                if isEmptyLibrary {
+                    EmptyLibraryView()
+                } else {
+                    FilterLibraryView()
+                }
+            }
+            .environment(\.editMode, .constant(
+                isEmptyLibrary ? EditMode.inactive : EditMode.active))
+            .accentColor(.red)
+            .navigationTitle("Медиатека")
+            .navigationBarItems(trailing:
+                Button(action: { isEmptyLibrary.toggle() },
+                       label: {
+                    if isEmptyLibrary {
+                        Text("Править")
+                            .foregroundColor(.red)
+                    } else {
+                        Text("Готово")
+                            .bold()
+                            .foregroundColor(.red)
+                    }
+                })
+            )
+        }
     }
 }
 
