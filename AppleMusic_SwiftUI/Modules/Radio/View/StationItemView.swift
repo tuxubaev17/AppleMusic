@@ -28,14 +28,14 @@ struct StationItemView: View {
                         VStack(alignment:.leading) {
 
                             Text(data.name)
-                                .font(.title3)
+                                .font(.system(size: 18))
 
                             Text(data.title)
                                 .font(.system(size: 14))
                                 .foregroundColor(.gray)
                         }.padding()
                     }
-                    Divider()
+                    Divider().padding(.leading, 110)
                 }
             }.padding([.leading, .trailing])
         }
