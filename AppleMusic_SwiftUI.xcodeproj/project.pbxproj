@@ -20,6 +20,7 @@
 		5574DD2027495FBA00841E4A /* RadioItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */; };
 		5574DD222749744200841E4A /* RadioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD212749744200841E4A /* RadioItemView.swift */; };
 		5574DD242749790600841E4A /* StationsItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD232749790600841E4A /* StationsItemsModel.swift */; };
+		5574DD2627497ACD00841E4A /* StationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD2527497ACD00841E4A /* StationItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsModel.swift; sourceTree = "<group>"; };
 		5574DD212749744200841E4A /* RadioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemView.swift; sourceTree = "<group>"; };
 		5574DD232749790600841E4A /* StationsItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsItemsModel.swift; sourceTree = "<group>"; };
+		5574DD2527497ACD00841E4A /* StationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				5574DD15273CB94C00841E4A /* RadioView.swift */,
 				5574DD212749744200841E4A /* RadioItemView.swift */,
+				5574DD2527497ACD00841E4A /* StationItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				5574DD222749744200841E4A /* RadioItemView.swift in Sources */,
 				5574DD242749790600841E4A /* StationsItemsModel.swift in Sources */,
 				5574DD14273CB93500841E4A /* LibraryView.swift in Sources */,
+				5574DD2627497ACD00841E4A /* StationItemView.swift in Sources */,
 				5574DD2027495FBA00841E4A /* RadioItemsModel.swift in Sources */,
 				5574DD1C273CE5E600841E4A /* FilterItemsModel.swift in Sources */,
 				5574DD1A273CE0AF00841E4A /* FilterLibraryView.swift in Sources */,
