@@ -17,6 +17,7 @@
 		5574DD18273CE09000841E4A /* EmptyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD17273CE09000841E4A /* EmptyLibraryView.swift */; };
 		5574DD1A273CE0AF00841E4A /* FilterLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD19273CE0AF00841E4A /* FilterLibraryView.swift */; };
 		5574DD1C273CE5E600841E4A /* FilterItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD1B273CE5E600841E4A /* FilterItemsModel.swift */; };
+		5574DD2027495FBA00841E4A /* RadioItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5574DD17273CE09000841E4A /* EmptyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLibraryView.swift; sourceTree = "<group>"; };
 		5574DD19273CE0AF00841E4A /* FilterLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLibraryView.swift; sourceTree = "<group>"; };
 		5574DD1B273CE5E600841E4A /* FilterItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemsModel.swift; sourceTree = "<group>"; };
+		5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		5574DD09273CB72700841E4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				5574DD18273CE09000841E4A /* EmptyLibraryView.swift in Sources */,
 				5574DD14273CB93500841E4A /* LibraryView.swift in Sources */,
+				5574DD2027495FBA00841E4A /* RadioItemsModel.swift in Sources */,
 				5574DD1C273CE5E600841E4A /* FilterItemsModel.swift in Sources */,
 				5574DD1A273CE0AF00841E4A /* FilterLibraryView.swift in Sources */,
 				5574DD12273CB92200841E4A /* PlayerView.swift in Sources */,
