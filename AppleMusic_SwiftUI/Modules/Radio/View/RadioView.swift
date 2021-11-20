@@ -9,7 +9,29 @@ import SwiftUI
 
 struct RadioView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack (alignment: .leading) {
+                    
+                    Divider()
+                        .padding([.leading, .trailing])
+                    
+                    RadioItemView()
+                        .frame(height: 360)
+                    
+                    Divider()
+                        .padding([.leading, .trailing])
+                    
+                    Text("Станции")
+                        .bold()
+                        .font(.title)
+                        .padding(.leading)
+                    
+                    StationItemView()
+                }
+            }
+            .navigationTitle("Радио")
+        }
     }
 }
 
