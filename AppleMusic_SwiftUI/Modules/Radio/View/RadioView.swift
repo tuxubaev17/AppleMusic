@@ -17,7 +17,7 @@ struct RadioView: View {
                         .padding([.leading, .trailing])
                     
                     RadioItemView()
-                        .frame(height: 360)
+                        .frame(height: MetricRadioView.widthRadioItemView)
                     
                     Divider()
                         .padding([.leading, .trailing])
@@ -39,4 +39,11 @@ struct RadioView_Previews: PreviewProvider {
     static var previews: some View {
         RadioView()
     }
+}
+
+// MARK: - Metric
+
+struct MetricRadioView {
+    
+    static let widthRadioItemView: CGFloat = 360
 }

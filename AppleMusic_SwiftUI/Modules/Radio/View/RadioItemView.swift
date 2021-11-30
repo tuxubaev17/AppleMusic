@@ -10,7 +10,7 @@ import SwiftUI
 struct RadioItemView: View {
     
     private let radioItems = RadioItemsModel.data
-    private let rows = [GridItem(.fixed(330))]
+    private let rows = [GridItem(.fixed(MetricRadioItemView.rowGridItem))]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -21,19 +21,19 @@ struct RadioItemView: View {
                         Text(data.category.rawValue)
                             .foregroundColor(.secondary)
                             .fontWeight(.medium)
-                            .font(.system(size: 15))
+                            .font(.system(size: MetricRadioItemView.sizeFontCategory))
                         
                         Text(data.name)
-                            .font(.system(size: 22))
+                            .font(.system(size: MetricRadioItemView.sizeFontName))
                         
                         Text(data.title)
                             .foregroundColor(.secondary)
-                            .font(.system(size: 22))
+                            .font(.system(size: MetricRadioItemView.sizeFontTitle))
                         
                         Image(data.image)
                             .resizable()
-                            .frame(width:380)
-                            .cornerRadius(5)
+                            .frame(width: MetricRadioItemView.widthForImage)
+                            .cornerRadius(MetricRadioItemView.cornerRadiusForImage)
                     }
                 }
             }.padding()
@@ -45,4 +45,18 @@ struct RadioItemView_Previews: PreviewProvider {
     static var previews: some View {
         RadioItemView()
     }
+}
+
+// MARK: - Metric
+
+struct MetricRadioItemView {
+    
+    static let rowGridItem: CGFloat = 330
+    
+    static let sizeFontCategory: CGFloat = 15
+    static let sizeFontName: CGFloat = 22
+    static let sizeFontTitle: CGFloat = 22
+    
+    static let widthForImage: CGFloat = 380
+    static let cornerRadiusForImage: CGFloat = 5
 }
