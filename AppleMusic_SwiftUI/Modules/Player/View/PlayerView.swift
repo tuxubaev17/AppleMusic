@@ -13,14 +13,18 @@ struct PlayerView: View {
             HStack {
                 Image("WOODJU")
                     .resizable()
-                    .frame(width: 55, height: 55)
-                    .cornerRadius(5)
-                    .shadow(color: .gray, radius: 10, x: 0.0, y: 5.0)
-                    .padding(.leading, 5)
+                    .frame(width: MetricPlayerView.widthForImage,
+                           height: MetricPlayerView.heightForImage)
+                    .cornerRadius(MetricPlayerView.cornerRadiusForImage)
+                    .shadow(color: .gray,
+                            radius: MetricPlayerView.shadowRadius,
+                            x: MetricPlayerView.shadowAxisX,
+                            y: MetricPlayerView.shadowAxisY)
+                    .padding(.leading, MetricPlayerView.leadingPaddingForImage)
                 
                 Text("WOODJU - Vacuum")
-                    .foregroundColor(.black.opacity(0.7))
-                    .padding(.leading, 10)
+                    .foregroundColor(.black.opacity(MetricPlayerView.opacityForText))
+                    .padding(.leading, MetricPlayerView.leadingPaddingForText)
                 
                 Spacer()
                 
@@ -28,21 +32,20 @@ struct PlayerView: View {
                     Image(systemName: "play.fill")
                         .font(.title2)
                         .foregroundColor(.black)
-                        .padding(.trailing, 10)
+                        .padding(.trailing, MetricPlayerView.trailingPaddingForButtonPlay)
                 })
                 Button(action: {}, label: {
                     Image(systemName: "forward.fill")
                         .font(.title2)
                         .foregroundColor(.gray)
-                        .padding(.trailing, 5)
+                        .padding(.trailing, MetricPlayerView.trailingPaddingForButtonForward)
                 })
             }
             .padding()
-
         }
-        .frame(height: 75)
+        .frame(height: MetricPlayerView.heightForPlayerView)
         .background(Color.init("GrayColor"))
-        .offset(y: -49)
+        .offset(y: MetricPlayerView.offsetFromBottomForPlayer)
     }
 }
 
@@ -50,4 +53,28 @@ struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
         PlayerView()
     }
+}
+
+// MARK: - Metric
+
+struct MetricPlayerView {
+    
+    static let cornerRadiusForImage: CGFloat = 5
+    static let widthForImage: CGFloat = 55
+    static let heightForImage: CGFloat = widthForImage
+    static let leadingPaddingForImage: CGFloat = 5
+    
+    static let shadowRadius: CGFloat = 10
+    static let shadowAxisX: CGFloat = 0.0
+    static let shadowAxisY: CGFloat = 5.0
+    
+    
+    static let leadingPaddingForText: CGFloat = 10
+    static let opacityForText: CGFloat = 0.7
+    
+    static let trailingPaddingForButtonPlay: CGFloat = 10
+    static let trailingPaddingForButtonForward: CGFloat = 5
+    
+    static let heightForPlayerView: CGFloat = 75
+    static let offsetFromBottomForPlayer: CGFloat = -49
 }

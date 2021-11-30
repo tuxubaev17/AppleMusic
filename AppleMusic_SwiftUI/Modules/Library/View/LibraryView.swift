@@ -25,17 +25,17 @@ struct LibraryView: View {
             .accentColor(.red)
             .navigationTitle("Медиатека")
             .navigationBarItems(trailing:
-                Button(action: { isEmptyLibrary.toggle() },
-                       label: {
-                    if isEmptyLibrary {
-                        Text("Править")
-                            .foregroundColor(.red)
-                    } else {
-                        Text("Готово")
-                            .bold()
-                            .foregroundColor(.red)
-                    }
-                })
+                                    Button(action: { isEmptyLibrary.toggle() },
+                                           label: {
+                if isEmptyLibrary {
+                    Text("Править")
+                        .foregroundColor(.red)
+                } else {
+                    Text("Готово")
+                        .bold()
+                        .foregroundColor(.red)
+                }
+            })
             )
         }
     }
