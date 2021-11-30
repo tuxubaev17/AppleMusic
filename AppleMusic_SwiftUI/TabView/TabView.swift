@@ -19,25 +19,28 @@ struct AppTabView: View {
                 Alignment(horizontal: .center,
                           vertical: .bottom),
                content: {
-            TabView {
-                LibraryView()
-                    .tabItem {
-                        Image(systemName: "music.note.house.fill")
-                        Text("Медиатека")
-                    }
-                RadioView()
-                    .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
-                    }
-                Text("Поиск")
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Поиск")
-                    }
-            }
-            .accentColor(.red)
-            
+                TabView {
+
+                    LibraryView()
+                        .tabItem {
+                            Image(systemName: "music.note.house.fill")
+                            Text("Медиатека")
+                        }
+
+                    RadioView()
+                        .tabItem {
+                            Image(systemName: "dot.radiowaves.left.and.right")
+                            Text("Радио")
+                        }
+
+                    Text("Поиск")
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                            Text("Поиск")
+                        }
+                }
+                .accentColor(.red)
+
             PlayerView()
         })
     }
