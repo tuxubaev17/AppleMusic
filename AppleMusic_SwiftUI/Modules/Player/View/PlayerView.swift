@@ -44,7 +44,7 @@ struct PlayerView: View {
             .padding()
         }
         .frame(height: MetricPlayerView.heightForPlayerView)
-        .background(Color.init("GrayColor"))
+        .background(Color("GrayColor"))
         .offset(y: MetricPlayerView.offsetFromBottomForPlayer)
     }
 }
