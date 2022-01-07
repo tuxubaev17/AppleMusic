@@ -33,7 +33,7 @@ struct AppTabView: View {
                             Text("Радио")
                         }
 
-                    Text("Поиск")
+                    SearchMainView()
                         .tabItem {
                             Image(systemName: "magnifyingglass")
                             Text("Поиск")

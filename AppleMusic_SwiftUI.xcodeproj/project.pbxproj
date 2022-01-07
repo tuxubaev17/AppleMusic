@@ -21,6 +21,14 @@
 		5574DD222749744200841E4A /* RadioItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD212749744200841E4A /* RadioItemView.swift */; };
 		5574DD242749790600841E4A /* StationsItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD232749790600841E4A /* StationsItemsModel.swift */; };
 		5574DD2627497ACD00841E4A /* StationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574DD2527497ACD00841E4A /* StationItemView.swift */; };
+		55DF254F2787A21E00487E0B /* SearchMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF254E2787A21D00487E0B /* SearchMainView.swift */; };
+		55DF25512787A77700487E0B /* CategorySelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF25502787A77700487E0B /* CategorySelectedView.swift */; };
+		55E10D542787EC310027572E /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D532787EC310027572E /* SearchResult.swift */; };
+		55E10D562787ECD10027572E /* SearchNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D552787ECD10027572E /* SearchNavigationView.swift */; };
+		55E10D5A2788E84F0027572E /* RadioItemsPublishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D592788E84F0027572E /* RadioItemsPublishedData.swift */; };
+		55E10D5C2788EAFE0027572E /* StationItemsPublishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D5B2788EAFE0027572E /* StationItemsPublishedData.swift */; };
+		55E10D5E2788F70A0027572E /* CategoriesItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D5D2788F70A0027572E /* CategoriesItemsModel.swift */; };
+		55EC20E62787C6D200B44BA3 /* CateroriesTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC20E52787C6D200B44BA3 /* CateroriesTracksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		5574DD212749744200841E4A /* RadioItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemView.swift; sourceTree = "<group>"; };
 		5574DD232749790600841E4A /* StationsItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsItemsModel.swift; sourceTree = "<group>"; };
 		5574DD2527497ACD00841E4A /* StationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemView.swift; sourceTree = "<group>"; };
+		55DF254E2787A21D00487E0B /* SearchMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMainView.swift; sourceTree = "<group>"; };
+		55DF25502787A77700487E0B /* CategorySelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectedView.swift; sourceTree = "<group>"; };
+		55E10D532787EC310027572E /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		55E10D552787ECD10027572E /* SearchNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationView.swift; sourceTree = "<group>"; };
+		55E10D592788E84F0027572E /* RadioItemsPublishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsPublishedData.swift; sourceTree = "<group>"; };
+		55E10D5B2788EAFE0027572E /* StationItemsPublishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemsPublishedData.swift; sourceTree = "<group>"; };
+		55E10D5D2788F70A0027572E /* CategoriesItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesItemsModel.swift; sourceTree = "<group>"; };
+		55EC20E52787C6D200B44BA3 /* CateroriesTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CateroriesTracksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +107,7 @@
 		5574DD01273CB5F100841E4A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55DF254B2787A1D400487E0B /* Search */,
 				5574DD08273CB71E00841E4A /* Radio */,
 				5574DD03273CB6B500841E4A /* Library */,
 				5574DD02273CB64200841E4A /* Player */,
@@ -154,7 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				5574DD1F27495FBA00841E4A /* RadioItemsModel.swift */,
+				55E10D592788E84F0027572E /* RadioItemsPublishedData.swift */,
 				5574DD232749790600841E4A /* StationsItemsModel.swift */,
+				55E10D5B2788EAFE0027572E /* StationItemsPublishedData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +202,35 @@
 				5574DD0F273CB86800841E4A /* TabView.swift */,
 			);
 			path = TabView;
+			sourceTree = "<group>";
+		};
+		55DF254B2787A1D400487E0B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				55DF254C2787A1E400487E0B /* View */,
+				55DF254D2787A1EA00487E0B /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		55DF254C2787A1E400487E0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55DF254E2787A21D00487E0B /* SearchMainView.swift */,
+				55E10D532787EC310027572E /* SearchResult.swift */,
+				55E10D552787ECD10027572E /* SearchNavigationView.swift */,
+				55EC20E52787C6D200B44BA3 /* CateroriesTracksView.swift */,
+				55DF25502787A77700487E0B /* CategorySelectedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55DF254D2787A1EA00487E0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55E10D5D2788F70A0027572E /* CategoriesItemsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,15 +305,23 @@
 			files = (
 				5574DD18273CE09000841E4A /* EmptyLibraryView.swift in Sources */,
 				5574DD222749744200841E4A /* RadioItemView.swift in Sources */,
+				55E10D5A2788E84F0027572E /* RadioItemsPublishedData.swift in Sources */,
+				55E10D562787ECD10027572E /* SearchNavigationView.swift in Sources */,
 				5574DD242749790600841E4A /* StationsItemsModel.swift in Sources */,
 				5574DD14273CB93500841E4A /* LibraryView.swift in Sources */,
+				55E10D542787EC310027572E /* SearchResult.swift in Sources */,
 				5574DD2627497ACD00841E4A /* StationItemView.swift in Sources */,
 				5574DD2027495FBA00841E4A /* RadioItemsModel.swift in Sources */,
+				55DF254F2787A21E00487E0B /* SearchMainView.swift in Sources */,
+				55E10D5E2788F70A0027572E /* CategoriesItemsModel.swift in Sources */,
+				55DF25512787A77700487E0B /* CategorySelectedView.swift in Sources */,
+				55EC20E62787C6D200B44BA3 /* CateroriesTracksView.swift in Sources */,
 				5574DD1C273CE5E600841E4A /* FilterItemsModel.swift in Sources */,
 				5574DD1A273CE0AF00841E4A /* FilterLibraryView.swift in Sources */,
 				5574DD12273CB92200841E4A /* PlayerView.swift in Sources */,
 				5574DD10273CB86800841E4A /* TabView.swift in Sources */,
 				5574DCF4273CB06000841E4A /* AppleMusic_SwiftUIApp.swift in Sources */,
+				55E10D5C2788EAFE0027572E /* StationItemsPublishedData.swift in Sources */,
 				5574DD16273CB94C00841E4A /* RadioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

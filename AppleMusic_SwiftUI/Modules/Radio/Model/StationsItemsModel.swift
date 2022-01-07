@@ -8,6 +8,7 @@
 import Foundation
 
 struct StationItemsModels {
+    let id = UUID()
     var image: String
     var name: String
     var title: String
