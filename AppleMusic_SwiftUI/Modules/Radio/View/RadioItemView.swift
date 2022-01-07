@@ -9,13 +9,13 @@ import SwiftUI
 
 struct RadioItemView: View {
     
-    private let radioItems = RadioItemsModel.data
+    @ObservedObject var dataModel = RadioItemsPublishedData()
     private let rows = [GridItem(.fixed(MetricRadioItemView.rowGridItem))]
-    
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: rows, alignment: .top) {
-                ForEach(radioItems, id: \.self) { data in
+                ForEach(dataModel.data, id: \.self) { data in
                     VStack(alignment: .leading) {
                         
                         Text(data.category.rawValue)
@@ -32,7 +32,7 @@ struct RadioItemView: View {
                         
                         Image(data.image)
                             .resizable()
-                            .frame(width: MetricRadioItemView.widthForImage)
+                            .frame(width: MetricRadioItemView.widthForImage, height: MetricRadioItemView.heightForImage)
                             .cornerRadius(MetricRadioItemView.cornerRadiusForImage)
                     }
                 }
@@ -58,5 +58,7 @@ struct MetricRadioItemView {
     static let sizeFontTitle: CGFloat = 22
     
     static let widthForImage: CGFloat = 380
+    static let heightForImage: CGFloat = 260
+
     static let cornerRadiusForImage: CGFloat = 5
 }
