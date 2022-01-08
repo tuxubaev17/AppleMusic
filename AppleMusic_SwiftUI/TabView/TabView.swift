@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct AppTabView: View {
-    
+
+    @State var expand = false
+    @Namespace var animation
+
     init() {
         UITabBar.appearance()
             .backgroundColor =  UIColor(named: "GrayColor")
@@ -41,7 +44,7 @@ struct AppTabView: View {
                 }
                 .accentColor(.red)
 
-            PlayerView()
+            PlayerView(expand: $expand, animation: animation)
         })
     }
 }

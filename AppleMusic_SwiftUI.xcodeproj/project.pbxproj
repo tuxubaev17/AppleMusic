@@ -28,6 +28,7 @@
 		55E10D5A2788E84F0027572E /* RadioItemsPublishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D592788E84F0027572E /* RadioItemsPublishedData.swift */; };
 		55E10D5C2788EAFE0027572E /* StationItemsPublishedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D5B2788EAFE0027572E /* StationItemsPublishedData.swift */; };
 		55E10D5E2788F70A0027572E /* CategoriesItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D5D2788F70A0027572E /* CategoriesItemsModel.swift */; };
+		55E10D60278943D90027572E /* PlayerBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E10D5F278943D90027572E /* PlayerBlurView.swift */; };
 		55EC20E62787C6D200B44BA3 /* CateroriesTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC20E52787C6D200B44BA3 /* CateroriesTracksView.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		55E10D592788E84F0027572E /* RadioItemsPublishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioItemsPublishedData.swift; sourceTree = "<group>"; };
 		55E10D5B2788EAFE0027572E /* StationItemsPublishedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemsPublishedData.swift; sourceTree = "<group>"; };
 		55E10D5D2788F70A0027572E /* CategoriesItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesItemsModel.swift; sourceTree = "<group>"; };
+		55E10D5F278943D90027572E /* PlayerBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBlurView.swift; sourceTree = "<group>"; };
 		55EC20E52787C6D200B44BA3 /* CateroriesTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CateroriesTracksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				5574DD11273CB92200841E4A /* PlayerView.swift */,
+				55E10D5F278943D90027572E /* PlayerBlurView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				5574DD1C273CE5E600841E4A /* FilterItemsModel.swift in Sources */,
 				5574DD1A273CE0AF00841E4A /* FilterLibraryView.swift in Sources */,
 				5574DD12273CB92200841E4A /* PlayerView.swift in Sources */,
+				55E10D60278943D90027572E /* PlayerBlurView.swift in Sources */,
 				5574DD10273CB86800841E4A /* TabView.swift in Sources */,
 				5574DCF4273CB06000841E4A /* AppleMusic_SwiftUIApp.swift in Sources */,
 				55E10D5C2788EAFE0027572E /* StationItemsPublishedData.swift in Sources */,
