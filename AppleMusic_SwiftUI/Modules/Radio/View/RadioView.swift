@@ -46,6 +46,6 @@ struct RadioView_Previews: PreviewProvider {
 extension RadioView {
 
     enum Metric {
-    static let widthRadioItemView: CGFloat = 360
+        static let widthRadioItemView: CGFloat = 360
     }
 }

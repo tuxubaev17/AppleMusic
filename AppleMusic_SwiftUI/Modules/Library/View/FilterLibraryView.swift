@@ -48,8 +48,8 @@ struct FilterLibraryView_Previews: PreviewProvider {
 extension FilterLibraryView {
 
     enum Metric {
-    static let widthForImage: CGFloat = 25
-    static let heightForImage: CGFloat = widthForImage
-    static let paddingForImage: CGFloat = 10
+        static let widthForImage: CGFloat = 25
+        static let heightForImage: CGFloat = widthForImage
+        static let paddingForImage: CGFloat = 10
     }
 }
