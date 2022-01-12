@@ -35,6 +35,6 @@ struct EmptyLibraryView_Previews: PreviewProvider {
 extension EmptyLibraryView {
 
     enum Metric {
-    static let bottomPaddingForTopText: CGFloat = 1
+        static let bottomPaddingForTopText: CGFloat = 1
     }
 }
