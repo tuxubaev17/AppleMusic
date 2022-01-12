@@ -12,7 +12,8 @@ struct SearchMainView: View {
 
     private let columns = Array(
         repeating: GridItem(.flexible(), spacing: Metric.columnsSpacing),
-        count: Metric.columnsCount)
+        count: Metric.columnsCount
+    )
 
     @State private var dataModel = CategoriesItemsModel.data
     @State private var searchText = ""

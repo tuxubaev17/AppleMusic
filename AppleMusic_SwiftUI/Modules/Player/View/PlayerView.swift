@@ -15,7 +15,7 @@ struct PlayerView: View {
     @State var offset: CGFloat = 0
 
     var animation: Namespace.ID
-    var imageHeight = UIScreen.main.bounds.height / MetricPlayerView.screenFractionImage
+    var imageHeight = UIScreen.main.bounds.height / Metric.screenFractionImage
     private let safeArea = UIApplication.shared.windows.first?.safeAreaInsets
 
     var body: some View {
@@ -23,29 +23,29 @@ struct PlayerView: View {
         VStack {
             Capsule()
                 .fill(.gray)
-                .frame(width: expand ? MetricPlayerView.widthUpperСapsule : MetricPlayerView.zeroCGFloat,
-                       height: expand ? MetricPlayerView.heightUpperСapsule : MetricPlayerView.zeroCGFloat)
-                .padding(.vertical, expand ? MetricPlayerView.paddingUpperСapsule : MetricPlayerView.zeroCGFloat)
+                .frame(width: expand ? Metric.widthUpperСapsule : Metric.zeroCGFloat,
+                       height: expand ? Metric.heightUpperСapsule : Metric.zeroCGFloat)
+                .padding(.vertical, expand ? Metric.paddingUpperСapsule : Metric.zeroCGFloat)
 
             HStack {
                 if expand {
-                    Spacer(minLength: MetricPlayerView.zeroCGFloat)
+                    Spacer(minLength: Metric.zeroCGFloat)
                 }
 
                 Image("WOODJU")
                     .resizable()
-                    .frame(width: expand ? imageHeight : MetricPlayerView.widthForImage,
-                           height: expand ? imageHeight : MetricPlayerView.heightForImage)
-                    .cornerRadius(MetricPlayerView.cornerRadiusForImage)
+                    .frame(width: expand ? imageHeight : Metric.widthForImage,
+                           height: expand ? imageHeight : Metric.heightForImage)
+                    .cornerRadius(Metric.cornerRadiusForImage)
                     .shadow(color: .gray,
-                            radius: MetricPlayerView.shadowRadius,
-                            x: MetricPlayerView.shadowAxisX,
-                            y: MetricPlayerView.shadowAxisY)
+                            radius: Metric.shadowRadius,
+                            x: Metric.shadowAxisX,
+                            y: Metric.shadowAxisY)
 
                 if !expand {
                     Text("WOODJU - Vacuum")
-                        .foregroundColor(.black.opacity(MetricPlayerView.opacityForText))
-                        .padding(.leading, MetricPlayerView.leadingPaddingForText)
+                        .foregroundColor(.black.opacity(Metric.opacityForText))
+                        .padding(.leading, Metric.leadingPaddingForText)
                 }
 
                 Spacer()
@@ -55,13 +55,13 @@ struct PlayerView: View {
                         Image(systemName: "play.fill")
                             .font(.title2)
                             .foregroundColor(.black)
-                            .padding(.trailing, MetricPlayerView.trailingPaddingForButtonPlay)
+                            .padding(.trailing, Metric.trailingPaddingForButtonPlay)
                     })
                     Button(action: {}, label: {
                         Image(systemName: "forward.fill")
                             .font(.title2)
                             .foregroundColor(.gray)
-                            .padding(.trailing, MetricPlayerView.trailingPaddingForButtonForward)
+                            .padding(.trailing, Metric.trailingPaddingForButtonForward)
                     })
                 }
             }.padding(.horizontal)
@@ -73,14 +73,14 @@ struct PlayerView: View {
                         VStack(alignment: .leading) {
                             Text("Vacuum")
                                 .bold()
-                                .font(.system(size: MetricPlayerView.sizeFontTrack))
+                                .font(.system(size: Metric.sizeFontTrack))
                             Text("WOODJU")
                                 .foregroundColor(.gray)
-                                .font(.system(size: MetricPlayerView.sizeFontArtist))
+                                .font(.system(size: Metric.sizeFontArtist))
                         }.padding()
                     }
 
-                    Spacer(minLength: MetricPlayerView.zeroCGFloat)
+                    Spacer(minLength: Metric.zeroCGFloat)
 
                     Button(action: {}) {
                         Image(systemName: "ellipsis.circle")
@@ -92,25 +92,25 @@ struct PlayerView: View {
                 HStack {
                     ZStack {
                         Circle()
-                            .frame(width: MetricPlayerView.widthForCircle,
-                                   height: MetricPlayerView.heightForCircle)
-                            .padding(.trailing, MetricPlayerView.trailingPaddingCircle)
+                            .frame(width: Metric.widthForCircle,
+                                   height: Metric.heightForCircle)
+                            .padding(.trailing, Metric.trailingPaddingCircle)
 
                         Capsule()
                             .fill(.gray)
-                            .frame(width: MetricPlayerView.widthTrackCapsule,
-                                   height: MetricPlayerView.heightTrackCapsule)
+                            .frame(width: Metric.widthTrackCapsule,
+                                   height: Metric.heightTrackCapsule)
                             .padding()
                     }
                 }
 
                 HStack {
                     Text("0:00")
-                        .font(.system(size: MetricPlayerView.sizeFontTime))
-                        .padding(.trailing, MetricPlayerView.paddingTime)
+                        .font(.system(size: Metric.sizeFontTime))
+                        .padding(.trailing, Metric.paddingTime)
                     Text("-3:38")
-                        .font(.system(size: MetricPlayerView.sizeFontTime))
-                        .padding(.leading, MetricPlayerView.paddingTime)
+                        .font(.system(size: Metric.sizeFontTime))
+                        .padding(.leading, Metric.paddingTime)
                 }
 
                 HStack {
@@ -137,10 +137,10 @@ struct PlayerView: View {
                     Image(systemName: "speaker.fill")
                     Slider(value: $volume).accentColor(.red)
                     Image(systemName: "speaker.wave.2.fill")
-                }.padding(MetricPlayerView.paddingVolume)
+                }.padding(Metric.paddingVolume)
 
 
-                HStack(spacing: MetricPlayerView.spacingBottomButtons) {
+                HStack(spacing: Metric.spacingBottomButtons) {
 
                     Button(action: {}) {
                         Image(systemName: "quote.bubble")
@@ -161,19 +161,19 @@ struct PlayerView: View {
                     }
                 }
             }
-            .frame(width: expand ? nil : MetricPlayerView.zeroCGFloat,
-                   height: expand ? nil : MetricPlayerView.zeroCGFloat)
-            .opacity(expand ? MetricPlayerView.opacityExpandView : MetricPlayerView.zeroCGFloat)
+            .frame(width: expand ? nil : Metric.zeroCGFloat,
+                   height: expand ? nil : Metric.zeroCGFloat)
+            .opacity(expand ? Metric.opacityExpandView : Metric.zeroCGFloat)
         }
-        .frame(maxHeight: expand ?.infinity : MetricPlayerView.maxHeightPlayerView)
+        .frame(maxHeight: expand ?.infinity : Metric.maxHeightPlayerView)
         .background(
-            VStack(spacing: MetricPlayerView.zeroCGFloat) {
+            VStack(spacing: Metric.zeroCGFloat) {
                 PlayerBlurView()
             }.onTapGesture(count: 2) {
                 withAnimation(.spring()) { expand = true }
             }
         )
-        .offset(y: expand ? MetricPlayerView.zeroCGFloat : MetricPlayerView.offsetFromBottomForPlayer)
+        .offset(y: expand ? Metric.zeroCGFloat : Metric.offsetFromBottomForPlayer)
         .gesture(DragGesture().onEnded(onEnded(value:)).onChanged(onChanged(value:)))
     }
 
@@ -196,8 +196,9 @@ struct PlayerView: View {
 
 // MARK: - Metric
 
-struct MetricPlayerView {
+extension PlayerView {
 
+    enum Metric {
     static let screenFractionImage: CGFloat = 3.5
 
     static let widthUpperСapsule: CGFloat = 40
@@ -239,4 +240,5 @@ struct MetricPlayerView {
     
     static let heightForPlayerView: CGFloat = 75
     static let offsetFromBottomForPlayer: CGFloat = -49
+    }
 }
