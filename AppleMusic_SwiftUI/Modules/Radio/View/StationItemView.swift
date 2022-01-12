@@ -54,12 +54,12 @@ struct StationItemView_Previews: PreviewProvider {
 extension StationItemView {
 
     enum Metric {
-    static let cornerRadiusForImage: CGFloat = 5
-    static let widthForImage: CGFloat = 100
-    
-    static let sizeFontName: CGFloat = 18
-    static let sizeFontTittle: CGFloat = 14
-    
-    static let leadingPaddingForDivider: CGFloat = 110
+        static let cornerRadiusForImage: CGFloat = 5
+        static let widthForImage: CGFloat = 100
+        
+        static let sizeFontName: CGFloat = 18
+        static let sizeFontTittle: CGFloat = 14
+        
+        static let leadingPaddingForDivider: CGFloat = 110
     }
 }
