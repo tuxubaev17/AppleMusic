@@ -22,21 +22,21 @@ struct StationItemView: View {
                         Image(data.image)
                             .resizable()
                             .scaledToFit()
-                            .cornerRadius(MetricStationItemView.cornerRadiusForImage)
-                            .frame(width: MetricStationItemView.widthForImage)
+                            .cornerRadius(Metric.cornerRadiusForImage)
+                            .frame(width: Metric.widthForImage)
                         
                         VStack(alignment:.leading) {
                             
                             Text(data.name)
-                                .font(.system(size: MetricStationItemView.sizeFontName))
+                                .font(.system(size: Metric.sizeFontName))
                             
                             Text(data.title)
-                                .font(.system(size: MetricStationItemView.sizeFontTittle))
+                                .font(.system(size: Metric.sizeFontTittle))
                                 .foregroundColor(.gray)
                         }.padding()
                     }
                     Divider()
-                        .padding(.leading, MetricStationItemView.leadingPaddingForDivider)
+                        .padding(.leading, Metric.leadingPaddingForDivider)
                 }
             }.padding([.leading, .trailing])
         }
@@ -51,8 +51,9 @@ struct StationItemView_Previews: PreviewProvider {
 
 // MARK: - Metric
 
-struct MetricStationItemView {
-    
+extension StationItemView {
+
+    enum Metric {
     static let cornerRadiusForImage: CGFloat = 5
     static let widthForImage: CGFloat = 100
     
@@ -60,4 +61,5 @@ struct MetricStationItemView {
     static let sizeFontTittle: CGFloat = 14
     
     static let leadingPaddingForDivider: CGFloat = 110
+    }
 }

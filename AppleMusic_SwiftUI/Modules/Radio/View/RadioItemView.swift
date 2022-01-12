@@ -10,7 +10,7 @@ import SwiftUI
 struct RadioItemView: View {
     
     @ObservedObject var dataModel = RadioItemsPublishedData()
-    private let rows = [GridItem(.fixed(MetricRadioItemView.rowGridItem))]
+    private let rows = [GridItem(.fixed(Metric.rowGridItem))]
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -21,19 +21,19 @@ struct RadioItemView: View {
                         Text(data.category.rawValue)
                             .foregroundColor(.secondary)
                             .fontWeight(.medium)
-                            .font(.system(size: MetricRadioItemView.sizeFontCategory))
+                            .font(.system(size: Metric.sizeFontCategory))
                         
                         Text(data.name)
-                            .font(.system(size: MetricRadioItemView.sizeFontName))
+                            .font(.system(size: Metric.sizeFontName))
                         
                         Text(data.title)
                             .foregroundColor(.secondary)
-                            .font(.system(size: MetricRadioItemView.sizeFontTitle))
+                            .font(.system(size: Metric.sizeFontTitle))
                         
                         Image(data.image)
                             .resizable()
-                            .frame(width: MetricRadioItemView.widthForImage, height: MetricRadioItemView.heightForImage)
-                            .cornerRadius(MetricRadioItemView.cornerRadiusForImage)
+                            .frame(width: Metric.widthForImage, height: Metric.heightForImage)
+                            .cornerRadius(Metric.cornerRadiusForImage)
                     }
                 }
             }.padding()
@@ -49,7 +49,9 @@ struct RadioItemView_Previews: PreviewProvider {
 
 // MARK: - Metric
 
-struct MetricRadioItemView {
+extension RadioItemView {
+
+    enum Metric {
     
     static let rowGridItem: CGFloat = 330
     
@@ -61,4 +63,5 @@ struct MetricRadioItemView {
     static let heightForImage: CGFloat = 260
 
     static let cornerRadiusForImage: CGFloat = 5
+    }
 }

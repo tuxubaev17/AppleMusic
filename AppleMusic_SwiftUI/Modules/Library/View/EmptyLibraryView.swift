@@ -14,7 +14,7 @@ struct EmptyLibraryView: View {
             Text("Ищете свою музыку?")
                 .font(.title2)
                 .bold()
-                .padding(.bottom, MetricEmptyLibraryView.bottomPaddingForTopText)
+                .padding(.bottom, Metric.bottomPaddingForTopText)
             
             Text("Здесь появится купленная Вами в\n iTunes Store музыка.")
                 .font(.body)
@@ -32,7 +32,9 @@ struct EmptyLibraryView_Previews: PreviewProvider {
 
 // MARK: - Metric
 
-struct MetricEmptyLibraryView {
-    
+extension EmptyLibraryView {
+
+    enum Metric {
     static let bottomPaddingForTopText: CGFloat = 1
+    }
 }

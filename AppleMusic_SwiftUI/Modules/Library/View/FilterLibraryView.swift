@@ -21,10 +21,10 @@ struct FilterLibraryView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.red)
-                        .frame(width: MetricFilterLibraryView.widthForImage,
-                               height: MetricFilterLibraryView.heightForImage)
+                        .frame(width: Metric.widthForImage,
+                               height: Metric.heightForImage)
                         .padding([.top, .bottom, .trailing],
-                                 MetricFilterLibraryView.paddingForImage)
+                                 Metric.paddingForImage)
                     
                     Text(item.title)
                         .font(.title3)
@@ -45,9 +45,11 @@ struct FilterLibraryView_Previews: PreviewProvider {
 
 // MARK: - Metric
 
-struct MetricFilterLibraryView {
-    
+extension FilterLibraryView {
+
+    enum Metric {
     static let widthForImage: CGFloat = 25
     static let heightForImage: CGFloat = widthForImage
     static let paddingForImage: CGFloat = 10
+    }
 }
