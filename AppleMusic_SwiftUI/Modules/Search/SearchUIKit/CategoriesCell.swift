@@ -51,7 +51,7 @@ class CategoriesCell: UICollectionViewCell {
     private func setupImageView() {
         imageView.clipsToBounds = true
         imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 5
+        imageView.layer.cornerRadius = 7
         imageView.contentMode = .scaleAspectFill
     }
 
