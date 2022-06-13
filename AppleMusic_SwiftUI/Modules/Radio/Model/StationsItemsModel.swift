@@ -16,23 +16,23 @@ struct StationItemsModels {
 
 extension StationItemsModels: Hashable {
     static var data = [
-        StationItemsModels(image: "blonded",
-                           name: "blonded RADIO",
-                           title: "Демонстрация электичного вкуса"),
-        StationItemsModels(image: "stmpd",
-                           name: "STMPD Radio",
-                           title: "Эксклюзивные треки"),
-        StationItemsModels(image: "fatboyslim",
-                           name: "Fatboy Slim Radio",
-                           title: "Классика 90-х и эксклюзивные бутлеги"),
-        StationItemsModels(image: "the echo chamber",
-                           name: "The Echo Chamber",
-                           title: "Слушаем музыку вместе с Mike D"),
-        StationItemsModels(image: "one mix",
-                           name: "One Mix",
-                           title: "Микс от лучшых в электронной музыке"),
-        StationItemsModels(image: "st.vincents",
-                           name: "St.Vincent's",
-                           title: "Сингер-сонграйтер рекомендует")
+        StationItemsModels(image: "1",
+                           name: "Русское радио",
+                           title: "Вкусное русское радио"),
+        StationItemsModels(image: "2",
+                           name: "Хитовое радио",
+                           title: "Классные песни"),
+        StationItemsModels(image: "3",
+                           name: "Современное радио",
+                           title: "Слушай современную музыку"),
+        StationItemsModels(image: "4",
+                           name: "Радио Тандем",
+                           title: "Слушаем музыку вместе с Алиханом"),
+        StationItemsModels(image: "5",
+                           name: "104.7 Радио",
+                           title: "Лучшее радио на нашем"),
+        StationItemsModels(image: "6",
+                           name: "Американское радио",
+                           title: "запад на западе")
     ]
 }

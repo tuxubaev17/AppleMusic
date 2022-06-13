@@ -32,7 +32,7 @@ struct PlayerView: View {
                     Spacer(minLength: Metric.zeroCGFloat)
                 }
 
-                Image("WOODJU")
+                Image("баста")
                     .resizable()
                     .frame(width: expand ? imageHeight : Metric.widthForImage,
                            height: expand ? imageHeight : Metric.heightForImage)
@@ -43,7 +43,7 @@ struct PlayerView: View {
                             y: Metric.shadowAxisY)
 
                 if !expand {
-                    Text("WOODJU - Vacuum")
+                    Text("ОСЕНЬ - Баста")
                         .foregroundColor(.black.opacity(Metric.opacityForText))
                         .padding(.leading, Metric.leadingPaddingForText)
                 }
@@ -71,10 +71,10 @@ struct PlayerView: View {
                 HStack {
                     if expand {
                         VStack(alignment: .leading) {
-                            Text("Vacuum")
+                            Text("Осень")
                                 .bold()
                                 .font(.system(size: Metric.sizeFontTrack))
-                            Text("WOODJU")
+                            Text("БАСТА")
                                 .foregroundColor(.gray)
                                 .font(.system(size: Metric.sizeFontArtist))
                         }.padding()
@@ -108,7 +108,7 @@ struct PlayerView: View {
                     Text("0:00")
                         .font(.system(size: Metric.sizeFontTime))
                         .padding(.trailing, Metric.paddingTime)
-                    Text("-3:38")
+                    Text("-3:20")
                         .font(.system(size: Metric.sizeFontTime))
                         .padding(.leading, Metric.paddingTime)
                 }

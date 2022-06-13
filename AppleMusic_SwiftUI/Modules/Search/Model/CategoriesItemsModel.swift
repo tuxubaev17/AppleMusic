@@ -15,21 +15,21 @@ struct CategoriesItemsModel: Identifiable {
 
 extension CategoriesItemsModel {
     static let data = [
-        CategoriesItemsModel(image: "зимнее время",
-                             title: "Зимнее время"),
-        CategoriesItemsModel(image: "поп на русском",
-                             title: "Поп на русском"),
-        CategoriesItemsModel(image: "поп",
-                             title: "Поп"),
-        CategoriesItemsModel(image: "альтернатива",
-                             title: "Альтернатива"),
-        CategoriesItemsModel(image: "пространственное звучание",
-                             title: "Пространственное звучание"),
+        CategoriesItemsModel(image: "пространственное аудио",
+                             title: "Пространственное аудио"),
+        CategoriesItemsModel(image: "хиты",
+                             title: "Хиты"),
         CategoriesItemsModel(image: "хип-хоп на русском",
                              title: "Хип-хоп на русском"),
-        CategoriesItemsModel(image: "блюз",
-                             title: "Блюз"),
-        CategoriesItemsModel(image: "музыка 90-х",
-                             title: "Музыка 90-х")
+        CategoriesItemsModel(image: "летняя музыка",
+                             title: "Летняя музыка"),
+        CategoriesItemsModel(image: "хиты на русском",
+                             title: "Хиты на русском"),
+        CategoriesItemsModel(image: "хип-хоп-Рэп",
+                             title: "Хип-хоп/Рэп"),
+        CategoriesItemsModel(image: "DJ Микс",
+                             title: "DJ Микс"),
+        CategoriesItemsModel(image: "дискотеха 80-х",
+                             title: "Музыка 80-х")
     ]
 }
